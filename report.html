@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kawempe CleanLink community waste information and reporting website">
+<title>Report a Concern | Kawempe CleanLink</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark">♻</span><span>Kawempe CleanLink</span></a>
+<nav aria-label="Main navigation"><a href="index.html" class="">Home</a>
+<a href="about.html" class="">About & Contacts</a>
+<a href="learn.html" class="">Learn & Updates</a>
+<a href="report.html" class="active">Report</a>
+<a href="track.html" class="">Track</a>
+<a href="admin.html" class="">Admin Preview</a></nav></div></header>
+
+<main><section class="page-hero"><div class="container"><span class="eyebrow">Tell us what you noticed</span><h1>Report a waste concern</h1><p class="lead">This page demonstrates the fields a community reporting form could collect.</p></div></section>
+<section class="section"><div class="container split">
+<div class="panel"><h2>Sample report form</h2>
+<form action="#confirmation" method="get">
+<div><label for="category">Type of concern</label><select id="category" name="category" required><option value="">Choose a category</option><option>Illegal dumping</option><option>Overflowing waste</option><option>Missed collection</option><option>Blocked drainage</option><option>Other</option></select></div>
+<div><label for="area">Area / neighbourhood</label><input id="area" name="area" type="text" placeholder="e.g. Kawempe" required></div>
+<div><label for="landmark">Nearby landmark</label><input id="landmark" name="landmark" type="text" placeholder="A nearby road, school or shop"></div>
+<div><label for="date">Date noticed</label><input id="date" name="date" type="date"></div>
+<div><label for="description">Describe the concern</label><textarea id="description" name="description" placeholder="Briefly describe what you observed" required></textarea></div>
+<div><label for="photo">Optional photograph</label><input id="photo" name="photo" type="file" accept="image/*"><small>In this prototype, files are not uploaded or stored.</small></div>
+<div><label><input type="checkbox" required style="width:auto"> I understand this is a student demonstration and I will not submit private or sensitive information.</label></div>
+<button class="button" type="submit">Preview confirmation</button>
+</form>
+</div>
+<div><div class="notice"><strong>Important limitation</strong><p>This form does not send information to an administrator or save it in a database. It only demonstrates the intended layout. Do not enter real personal details.</p></div>
+<div id="confirmation" class="panel" style="margin-top:18px"><span class="tag">Confirmation preview</span><h2>Thank you for your report</h2><p>Your concern would be reviewed by an authorised administrator. In a live system, a unique reference number would be generated and provided here.</p><p><strong>Example reference:</strong> KCL-2026-001 <small>(illustration only; not a real report number)</small></p><p>Keep the reference number to check the recorded status later.</p><a href="track.html">See how tracking would work →</a></div></div>
+</div></section></main>
+
+<footer class="site-footer"><div class="container footer-grid">
+<div><h3>Kawempe CleanLink</h3><p>A student-designed community information website about responsible waste handling and reporting concerns in Kawempe.</p><small>Educational project prototype. It is not an official KCCA reporting service.</small></div>
+<div><h3>Explore</h3><div class="footer-links"><a href="about.html">About & Contacts</a><a href="learn.html">Learn & Updates</a><a href="report.html">Report</a><a href="track.html">Track</a></div></div>
+</div><div class="container"><hr><small>© 2026 Kawempe CleanLink student project. Verify service details with official sources.</small></div></footer>
+</body>
+</html>
